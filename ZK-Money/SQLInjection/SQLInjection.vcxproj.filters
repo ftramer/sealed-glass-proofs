@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{28e8c5c7-5e46-4c11-a3d4-aa693d6db31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{483ce7af-19fb-4f99-b8b6-271e118e2399}</UniqueIdentifier>
+      <Extensions>cpp;c;edl;def; .. and other options</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cea04d16-d28e-44b2-90e1-8343c218f7a3}</UniqueIdentifier>
+      <Extensions>h;hpp; .. and other options</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ed806ef6-2af5-467e-bf94-f7e2b7ebc446}</UniqueIdentifier>
+      <Extensions>rc;xml;pem; .. and other options</Extensions>
+    </Filter>
+    <Filter Include="SQLite">
+      <UniqueIdentifier>{4eec7283-db67-41de-89b2-8b1fc84d48dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="httpParser">
+      <UniqueIdentifier>{cdff5be6-73ee-48a6-bad3-e457eabc85a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SQLInjection_t.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite_sgx.h">
+      <Filter>SQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="Prog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\http_parser.h">
+      <Filter>httpParser</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\query_parser.h">
+      <Filter>httpParser</Filter>
+    </ClInclude>
+    <ClInclude Include="exploit\simple_parser.h">
+      <Filter>httpParser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SQLInjection.edl">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SQL_Injection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite_sgx.cpp">
+      <Filter>SQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\http_parser.cpp">
+      <Filter>httpParser</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\query_parser.cpp">
+      <Filter>httpParser</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\simple_parser.cpp">
+      <Filter>httpParser</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

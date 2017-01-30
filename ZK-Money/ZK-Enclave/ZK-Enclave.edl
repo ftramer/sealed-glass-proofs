@@ -1,0 +1,18 @@
+enclave {
+	
+	include "sgx_report.h"
+	include "keys.h"
+
+    trusted {
+		public int run_encrypt_attest([in, size=len_in] byte* input, size_t len_in, 
+								  [out, size=len_out] byte* output, size_t len_out, 
+								  [in] key_msg* key_msg, [out, size=len_in] byte* m_cipher, [out, size=32] byte* commit,
+								  [in] sgx_target_info_t* quote_enc_info, [out] sgx_report_t* report);
+
+		public int decrypt_exploit([in] key_msg* key_msg, [in, size=len_in] byte* input, size_t len_in, [out, size=len_in] byte* output);
+	};
+
+    untrusted {
+		
+    };
+};
